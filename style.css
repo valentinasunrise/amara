@@ -52,16 +52,23 @@ main img{
   margin-bottom: 1rem;
 }
 .flexbox1{
-  background-image: url(img/wer-bin-ich.jpg);
+  display: flex;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  display: flex;
   transition: .7s;
+  }
+.gross{
+  background-image: url(img/wer-bin-ich.jpg);
+  /*width: 100%;*/
+  height: 100%;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  }
 
   /*margin-top: 1rem;*/
-}
-.flexbox1:hover{
+
+.gross:hover{
   background-image: url(img/wer-bin-ich-hover.jpg);
 
 }
@@ -96,20 +103,14 @@ main img{
   text-align: center;
   text-shadow:2px 2px 5px rgba(0, 0, 0, 1);
   display:flex;
-}
-.textbox{
   text-transform: uppercase;
   font-size: 30px;
-  color: #fff;
-  margin: auto;
-  text-align: center;
-  text-shadow:2px 2px 5px rgba(0, 0, 0, 1);
-  display:flex;
   text-decoration: none;
 }
-.flexbox1 a{
+
+/*.flexbox1 a{
   margin-left: 290px;
-}
+}*/
 
 
 footer{
@@ -150,16 +151,23 @@ footer a{
     border-radius: 4px;
   }
   .bigbox{
-  display: flex;
-  margin-top: 1rem;
-  /*height: 500px;*/
+    display: flex;
+    margin-top: 1rem;
+    /*height: 500px;*/
   }
 
   .flexbox1{
     width: 60%;
     margin-right: 1rem;
   }
-
+  .gross{
+    order: 0;
+    flex: 1 1 auto;
+    align-self: stretch;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
   .flexbox2 {
       width: 40%;
       display: -ms-flexbox;
