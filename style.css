@@ -59,7 +59,7 @@ main img{
   }
 .gross{
   background-image: url(img/wer-bin-ich.jpg);
-  /*width: 100%;*/
+  width: 100%;
   height: 100%;
   display: flex;
   background-size: cover;
